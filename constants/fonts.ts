@@ -1,0 +1,43 @@
+import { Platform } from 'react-native';
+
+export const Fonts = Platform.select({
+  ios: {
+    regular: 'Poppins-Regular',
+    thin: 'Poppins-Thin',
+    extralight: 'Poppins-ExtraLight',
+    light: 'Poppins-Light',
+    medium: 'Poppins-Medium',
+    semibold: 'Poppins-SemiBold',
+    bold: 'Poppins-Bold',
+    extrabold: 'Poppins-ExtraBold',
+    black: 'Poppins-Black',
+    italic: 'Poppins-Italic',
+    mono: 'ui-monospace',
+  },
+  default: {
+    regular: 'Poppins-Regular',
+    thin: 'Poppins-Thin',
+    extralight: 'Poppins-ExtraLight',
+    light: 'Poppins-Light',
+    medium: 'Poppins-Medium',
+    semibold: 'Poppins-SemiBold',
+    bold: 'Poppins-Bold',
+    extrabold: 'Poppins-ExtraBold',
+    black: 'Poppins-Black',
+    italic: 'Poppins-Italic',
+    mono: 'monospace',
+  },
+  web: {
+    regular: 'Poppins-Regular, system-ui, -apple-system, sans-serif',
+    thin: 'Poppins-Thin, system-ui, sans-serif',
+    extralight: 'Poppins-ExtraLight, system-ui, sans-serif',
+    light: 'Poppins-Light, system-ui, sans-serif',
+    medium: 'Poppins-Medium, system-ui, sans-serif',
+    semibold: 'Poppins-SemiBold, system-ui, sans-serif',
+    bold: 'Poppins-Bold, system-ui, sans-serif',
+    extrabold: 'Poppins-ExtraBold, system-ui, sans-serif',
+    black: 'Poppins-Black, system-ui, sans-serif',
+    italic: 'Poppins-Italic, system-ui, sans-serif',
+    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace",
+  },
+});
