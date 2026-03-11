@@ -3,26 +3,29 @@ Making File Sharing Easy. MacOS, Windows, IOS, Android
 
 ## System Overview
 
-**Discovery** 
-This uses mDNS `react-native-zeroconf` for discovering devices in the local network. 
+**Discovery** :
 
-`TODO : // Implement Cryptography`
+Uses mDNS protocol for discovering devices in the local network. 
 
-**TCP Layer**
-This establishes raw TCP connection `react-native-tcp-socket` between two devices.
+*`TODO : // Implement Cryptography`*
 
-**File Transfer**
-This Supports Sending Small Files to Streaming Large Files.
+------
 
+**TCP Layer** :
 
+Establishes a transport layer between two devices
 
--- **Note** : Exceptions's haven't been handled properly (Device Permissions to be exact)
+------
+
+**File Transfer** :
+
+Allows Sending Small Files to Streaming Large Files over raw TCP Network
 
 
 ## Stack
 
 - **React Native** — cross-platform mobile library
-- **Expo** - Heavily Relies on Expo SDK's
+- **Expo** - Heavily Relies on Expo's SDKs
 - **react-native-zeroconf** — mDNS publish & scan
 - **react-native-tcp-socket** — raw TCP server/client
 - **Zustand** — shared state across screens
@@ -38,3 +41,7 @@ npm install
 npx expo prebuild # create prebuild for both android and ios
 npx expo run:android   # or run:ios
 ```
+
+
+
+***Note**** : *Exceptions aren't handled properly (Device Permissions to be exact)*
